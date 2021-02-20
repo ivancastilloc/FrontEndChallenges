@@ -1,0 +1,149 @@
+/* STARTER */
+* {
+    margin: 0;
+    padding: 0;
+
+}
+html{
+    background: linear-gradient(to bottom, #af67e9, #6565e7);
+    height: 100vh;
+}
+
+body {
+    font-size: 12px;
+    font-family: 'Kumbh Sans', sans-serif;
+}
+
+/* Posicionamineto del container blanco */
+.FAQ{
+    position: relative;
+}
+.FAQ-container{
+    background-color: #fff;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    height: 80vh;
+    width: 70vw;
+    border-radius: 25px;
+
+}
+
+/* Container para cada mitad */
+.img-container, .accordion-container {
+    max-width: 50%;
+    height: 100%;
+}
+
+.img-container{
+    float: left;
+    position: relative;
+}
+
+.accordion-container{
+    float: right;
+}
+
+/* Imagenes */
+
+.no-overflow-img{
+    overflow: hidden;
+    height: 100%;
+}
+
+.box{
+    position: absolute;
+    bottom: 13em;
+    left: -7.7em;
+    z-index: 2;
+    overflow: visible;
+
+}
+.desktop{
+    position: relative;
+    top: 9em;
+    right: 5em;
+
+}
+
+.img-background{
+    position: relative;
+
+    bottom: 110%;
+    right: 100%;
+    z-index: -1;
+}
+
+/* FAQ */
+
+.text-container{
+    padding: 10% 5% 0 10%;
+}
+
+h1{
+    font-weight: 700;
+    font-size: 32px;
+    margin: 20px 0 10%;
+}
+
+.question:hover{
+    color: hsl(14, 88%, 65%);
+}
+
+.accordion{
+    font-size: 14px;
+    margin: 25px 0;
+    border-bottom: 1px solid;
+    border-color: hsl(240, 5%, 91%);
+    line-height: 18px;
+    
+}
+
+.icon-arrow{
+    position: absolute;
+    right: 10%;
+    
+}
+
+.icon-arrow:active{
+    transform: rotate(180deg);
+
+}
+
+
+.accordion p{
+    visibility: hidden;
+}
+p{
+    margin-top: 2.5px;
+}
+
+.p-on{
+    animation: pOn 1s;
+}
+.p-off{
+    animation: pOff 1s  ;
+}
+
+@keyframes pOn{
+    0% {
+        transform: translateY(-10px);
+        opacity: 0;
+    }
+    100%{
+        transform: translate(0);
+        opacity: 1;
+    }
+}
+
+@keyframes pOff{
+    0%{
+        transform: translate(0);
+        opacity: 1;
+    }
+    100%{
+        transform: translateY(-10px);
+        opacity: 0;
+    }
+}

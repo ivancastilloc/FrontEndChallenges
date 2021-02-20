@@ -1,0 +1,136 @@
+
+body{
+    font-family: 'Spartan', sans-serif;
+    font-size: 15px;
+
+    box-sizing: border-box;
+    background-image: url(../images/bg-pattern-top-desktop.svg), url(../images/bg-pattern-bottom-desktop.svg);
+    background-position: top left, bottom right;
+    background-repeat: no-repeat;
+    height: 100vh;
+}
+
+
+/* PAGE TOP */
+
+#page-top{
+    padding: 5% 10% 0;
+}
+
+.top-title{
+    color:hsl(300, 43%, 22%);
+    font-weight: 700;
+    font-size: 3rem;
+}
+
+.text-title{
+    color:hsl(303, 10%, 53%);
+    font-size: 1rem;
+}
+
+.top-half{
+    padding: 3%;
+}
+
+
+/* STARS */
+
+.star-container{
+    background-color: hsl(300, 24%, 96%);
+    border-radius: 5px;
+    text-align: center;
+    padding-top: 2.5%;
+    font-weight: 700;
+    margin-bottom: 5%;
+    height: 50px;
+    font-size: 0.9rem;
+}
+
+.star-container.left{
+    position: relative;
+    left: -10%;
+}
+
+.star-container.right{
+    position: relative;
+    right: -10%;
+}
+
+/* CARD */
+
+#page-testimonies{
+    padding: 0 5% 0% 7%;
+}
+.custom-card{
+    background-color: hsl(300, 43%, 22%);
+    font-weight: 400;
+    height: 225px;
+    width: 100%;
+    padding: 5%;
+    padding-top: 7%;
+    margin: 10% 5% 15%;
+    border-radius: 15px;
+}
+
+.card-title{
+    margin-bottom: 0%;
+}
+
+.card-verified{
+    color: hsl(303, 10%, 53%);
+    margin-top: 0%;
+}
+
+.card-img{
+    width: 10%;
+    border-radius: 100%;
+    position: absolute;
+}
+
+.custom-card.two{
+    margin-top: 15%;
+}
+
+.custom-card.three{
+    margin-top: 20%;
+}
+
+/* CARD MULTIPLES */
+.card-title, .card-verified{
+    padding-left: 15%;
+}
+
+.card-white, .card-title{
+    color:  hsl(300, 24%, 96%);
+}
+
+/* MEDIA QUERY */
+
+@media (max-width: 900px){
+    #page-top{
+        text-align: center;
+        padding: 10% 5% 0;
+    }
+    .top-left-container{
+        padding-right: 0;
+    }
+
+    .star-container.left{
+        position: relative;
+        left: 0;
+    }
+    
+    .star-container.right{
+        position: relative;
+        right: 0%;
+    }
+
+    #page-testimonies{
+        margin-top: 5%;
+        padding-left: 0%;
+    }
+
+    .custom-card{
+        margin: 0 5%;
+    }
+}
