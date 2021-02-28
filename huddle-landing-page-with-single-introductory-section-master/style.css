@@ -1,0 +1,176 @@
+/* Fonts
+
+HEADING
+font-family: 'Poppins', sans-serif;
+
+BODY
+font-family: 'Open Sans', sans-serif; */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    min-width: 100%;
+    min-height: 100%;
+}
+
+
+
+.container{
+    height: 100%;
+    width: 100%;
+}
+
+.text-container{
+    position: absolute;
+    right: 8%;
+    top: 35%;
+    width: 35%;
+    color: #fff;
+}
+
+.text-container__header{
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    font-size: 2.5rem;
+}
+
+.text-container__sub{
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    font-size: 1.12rem;
+    line-height: 1.6rem;
+}
+
+.btn:link,
+.btn:visited{
+    /* FONT */
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    font-size: 1.12rem;
+
+    /* Esto lo hace un boton */
+    text-decoration: none;
+    color: hsl(257, 40%, 49%);
+    background-color: #fff;
+    display: inline-block;
+    margin-top: 5%;
+    padding: 3% 12%;
+    border-radius: 2rem;
+
+    transition: all 1s;
+    box-shadow: 0 3px 10px black;
+
+}
+
+.btn:hover{
+    transform: translateY(-3px);
+    box-shadow: 0 3px 15px black;
+}
+
+.btn:active{
+    transform: translateY(-1px);
+    box-shadow: 0 1px 5px black;
+}
+
+.logo{
+    position: absolute;
+    top: 5%;
+    left: 5%;
+}
+
+.illustration{
+    position: absolute;
+    top: 22%;
+    left: 5%;
+}
+
+.icons{
+    color: white;
+    position: absolute;
+    right: 5%;
+    bottom: 10%;
+    font-size: 1.25rem;
+    width: 20%;
+    height: 10%;
+    text-align: center;
+}
+
+.icons_item{
+    margin: 5% 2.5%;
+    display: inline-block;
+    width: 45px;
+    height: 43px;
+    padding-top: 2.8%;
+    border: 2px solid;
+    border-radius: 50%;
+    transition: transform 1s;
+    cursor: pointer;
+}
+
+.icons_item:hover{
+    color: rgba(103, 75, 175,1);
+    background-color: #fff;
+    transform: translateY(-3px);
+}
+
+.icons_item:active{
+    transform: translateY(1px);
+}
+
+@media (max-width: 376px){
+
+    body{
+        background: url(images/bg-mobile.svg)
+        rgba(103, 75, 175,1)no-repeat;
+    }
+
+    .logo{
+        position: relative;
+        transform: scale(0.6);
+        top: 2%;
+        left: -8%;
+    }
+
+    .illustration{
+        transform: scale(0.4);
+        top:-3%;
+        left: -45%;
+    }
+
+    .text-container{
+        position: relative;
+        width: 90%;
+        text-align: center;
+        margin: 85% 0% 10%;
+        right: -5%;
+    }
+
+    .text-container__header{
+        
+        font-size: 1.5rem;
+    }
+    
+    .text-container__sub{
+        margin-top: 20px;
+        font-size: 1rem;
+        line-height: 1.8rem;
+    }
+
+    .icons{
+        position: relative;
+        width: 100%;
+    }
+
+    
+}
+
+@media (min-width: 377px) {
+    body {
+        background:url(images/bg-desktop.svg) no-repeat center center fixed rgba(103, 75, 175,1)  ;
+        background-size: cover;
+    }
+}
