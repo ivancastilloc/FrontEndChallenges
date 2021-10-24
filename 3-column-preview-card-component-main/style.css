@@ -1,0 +1,124 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: content-box;
+}
+
+:root{
+
+    --font-title: 'Big Shoulders Display', cursive;
+    --font-body: 'Lexend Deca', sans-serif;
+
+    --light-gray: hsl(0, 0%, 95%);
+    --transparent-white: hsla(0, 0%, 100%, 0.75);
+}
+
+body{
+    font-size: 1rem;
+    font-family: var(--font-body);
+    background-color: var(--light-gray)
+
+
+}
+
+.flex-container{
+    display: flex;
+    flex-direction: column;
+}
+
+.container{
+    padding: 10% 10% 15%;
+    margin: 0 7.5% 0;
+    color: var(--transparent-white);
+    height: 60vh;
+}
+
+
+/* COSAS DENTRO DE LAS CAJAS  */
+
+.title{
+    font-family: var(--font-title);
+    color:var(--light-gray);
+    margin-top: 10%;
+}
+
+.description{
+    margin-top: 15%;
+    width: 20ch;
+}
+
+.btn{
+    padding: 4% 10% ;
+    border: 2px solid var(--transparent-white);
+    border-radius: 25px;
+    transition: all 0.5s;
+    color: #000;
+    mix-blend-mode: screen;
+    background-color: white;
+
+    display: inline-block;
+    margin-top: 15%;
+}
+
+
+.btn:hover{
+    background: none;
+    cursor: pointer;
+    color: var(--transparent-white)
+}
+
+/* COLORES DE FONDO */
+
+.sedans{
+    background-color: hsl(31, 77%, 52%);
+    margin-top: 10%;
+    border-radius: 20px 20px 0 0 ;
+}
+
+
+
+.suvs{
+    background-color: hsl(184, 100%, 22%);
+}
+
+
+.luxury{
+    background-color: hsl(179, 100%, 13%);
+    margin-bottom: 10%;
+    border-radius: 0 0 20px 20px ;
+}
+
+.logo{
+    margin: 0;
+}
+
+
+
+/* MEDIA QUERIES */
+
+
+@media (min-width: 900px) {
+    .flex-container{
+        flex-direction: row;
+        margin: 10%;
+    }
+
+    .container{
+        margin: 0;
+        padding: 10%;
+        height: 50vh;
+    }
+
+    .btn{
+        padding: 7% 15% ;
+    }
+
+    .sedans{
+        border-radius: 20px 0 0 20px  ;
+    }
+
+    .luxury{
+        border-radius: 0 20px 20px 0 ;
+    }
+}
+  
